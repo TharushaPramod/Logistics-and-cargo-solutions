@@ -12,8 +12,8 @@ const Navbar = () => {
         { name: 'About Us', path: '/about' },
         { name: 'Services', path: '/service' },
         { name: 'Features', path: '/feature' },
-        { name: 'Gallery', path: '#' },
-        { name: 'Contact', path: '#' },
+        { name: 'Gallery', path: '/gallery' },
+        { name: 'Contact', path: '/contact' },
     ];
 
     const isActive = (path) => location.pathname === path;
@@ -24,7 +24,7 @@ const Navbar = () => {
         <nav className={`fixed z-50 w-full py-5 transition-all duration-500 
             ${isHomePage 
                 ? 'bg-transparent border-transparent' 
-                : 'bg-slate-900/90 shadow-xl border-b border-slate-800' 
+                : 'bg-slate-900 shadow-xl border-b border-slate-800' 
             }`}>
             
             <div className="container flex items-center justify-between px-6 mx-auto ">
@@ -53,10 +53,10 @@ const Navbar = () => {
                 {/* Right Side Actions - WhatsApp Booking [cite: 5, 32] */}
                 <div className="flex items-center flex-none gap-4">
                     <Link
-                        to=""
+                        to="/feature"
                         className="hidden px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-white transition-all transform rounded-none border border-white hover:bg-white hover:text-black md:block"
                     >
-                        Book Now
+                        Cargo Tracker
                     </Link>
 
                     <button
@@ -87,11 +87,11 @@ const Navbar = () => {
                             </Link>
                         ))}
                         <Link
-                            to="/contact"
-                            className="inline-block w-full px-6 py-3 text-center text-xs font-bold uppercase tracking-widest text-white transition-colors border border-white hover:bg-white hover:text-black"
+                            to="/feature"
+                            className="inline-block w-full px-6 py-3 text-xs font-bold tracking-widest text-center text-white uppercase transition-colors border border-white hover:bg-white hover:text-black"
                             onClick={() => setIsOpen(false)}
                         >
-                            Book Now
+                             Cargo Tracker
                         </Link>
                     </div>
                 </div>
