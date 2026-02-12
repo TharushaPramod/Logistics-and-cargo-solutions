@@ -69,3 +69,5 @@ LOGISTICS-AND-CARGO-SOLUTIONS/
 4. npm run dev
 
 ## ▶️ Live Demo Video Link 
+
+https://drive.google.com/file/d/1oFGdpkIjoDjz3HfJQes_KLuVlJdEMY2l/view?usp=drive_link
