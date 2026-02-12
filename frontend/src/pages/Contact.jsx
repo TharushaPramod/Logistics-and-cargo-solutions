@@ -16,7 +16,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const phoneNumber = "94769855594"; 
+        const phoneNumber = "94703238582"; 
        
         const message = `Hi, I'm ${formData.name}, I want to ship ${formData.packageType} of ${formData.quantity}. Weight: ${formData.weight}`;
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
